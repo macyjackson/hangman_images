@@ -36,16 +36,10 @@ post '/choices' do
     redirect '/choices'
 end
 # i added winner and loser route here
-get'/winner' do
-    "you are a winner"
+get'/win' do
+    erb :win
 end
 get'/loser' do 
-    "your are a loser"
+    erb :lose
 end
 ####### end winner and loser routes
-post '/gameover' do
-    erb :gameover
-end
-get '/endscreen' do
-    erb :gameover
-end

@@ -64,10 +64,14 @@ end
 def check_winner(display_word, secret_word_array)
     if $display_word == $secret_word_array
         $solved = true
+        $wrong_guesses_count = 0
+        $all_guesses = []
         redirect'/winner'
         # p "Winner, Winner, Chicken Dinner!"
     end
-    if $wrong_guesses_count >= 10 
+    if $wrong_guesses_count >= 10
+        $wrong_guesses_count = 0
+        $all_guesses = [] 
         redirect'/loser'
         # puts "Sorry, you lose!"
     end
