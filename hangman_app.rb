@@ -36,7 +36,7 @@ post '/choices' do
     redirect '/choices'
 end
 # i added winner and loser route here
-get'/win' do
+get'/winner' do
     erb :win
 end
 get'/loser' do 

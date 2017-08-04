@@ -1,0 +1,16 @@
+.centerAll {
+	text-align: center;	
+}
+
+.headerColor {
+	font-size: 44;
+    color: blueviolet;
+}
+
+.padTop{
+	    padding-top: 20vh;
+}
+
+.padBottom{
+	    padding-bottom: 12vh;
+}
