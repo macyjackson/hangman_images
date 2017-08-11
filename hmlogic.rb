@@ -69,7 +69,7 @@ def check_winner(display_word, secret_word_array)
         redirect'/winner'
         # p "Winner, Winner, Chicken Dinner!"
     end
-    if $wrong_guesses_count >= 5
+    if $wrong_guesses_count >= 6
         $wrong_guesses_count = 0
         $all_guesses = [] 
         redirect'/loser'
