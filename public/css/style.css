@@ -5,15 +5,21 @@
 .headerColor {
 	font-size: 44;
     color: blueviolet;
+    padding-bottom: 9vh;
 }
 
 .padTop{
-	    padding-top: 20vh;
+	padding-top: 2vh;
 }
 
-.padBottom{
-	    padding-bottom: 12vh;
-}
 .foot {
-	    margin-top: 60vh;
+	margin-top: 5vh;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
