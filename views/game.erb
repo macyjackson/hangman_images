@@ -2,18 +2,21 @@ The word to guess is <br>
 <%= display_word.join(" ") %> <br>
 
 <p><%= message %>
-<% if wrong_guesses_count == 0 %>
-<p> You only have <%=wrong_guesses_count%> wrong guess!
-<% else %>
 <p><center> You have <%=wrong_guesses_count%> wrong guesses!</center>
 	<% if wrong_guesses_count == 0 %>
-	<img src="img/hangman6.gif">
+	<img src="/img/gallowonly.png">
 	<% elsif wrong_guesses_count == 1 %>
-	<img src="img/hangimg5.png">
+	<img src="/img/nobody.png">
+	<% elsif wrong_guesses_count == 2 %>
+	<img src="/img/nolegs.png">
+	<% elsif wrong_guesses_count == 3 %>
+	<img src="/img/oneleg.png">
+	<% elsif wrong_guesses_count == 4 %>
+	<img src="/img/onearm.png">
 	<% else %>
-	<img src="img/hangman6.gif">
+	<img src="/img/fullbody.gif">
 	<% end %>
-<% end %>
+
 
 <p> Player 2, please choose a letter.
 <form method="post" action="choices">
